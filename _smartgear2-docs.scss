@@ -8,3 +8,9 @@
 		&.submenu:not(.last):before{height: 100%;}
 	}
 }
+
+.callout{ width: 100%; max-width: 800px;
+	&:not([class*='m-top']){@extend .m-top-x2 !optional;}
+	&:not([class*='m-bottom']){@extend .m-bottom-x2 !optional;}
+	&:not([class*='m-left']):not([class*='m-right']){margin-left: auto; margin-right: auto;}
+}
