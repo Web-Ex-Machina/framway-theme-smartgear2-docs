@@ -14,3 +14,13 @@
 	&:not([class*='m-bottom']){@extend .m-bottom-x2 !optional;}
 	&:not([class*='m-left']):not([class*='m-right']){margin-left: auto; margin-right: auto;}
 }
+
+aside.sidenav{position: sticky; top: 120px; padding: $spacing; height: 90vh; overflow: auto;
+	scrollbar-width: thin;
+	scrollbar-height: thin;
+    scrollbar-color: rgba($primary,0.1) rgba($primary,0.1);
+    &::-webkit-scrollbar {width: 8px; }
+    &::-webkit-scrollbar-track {background: rgba($primary,0.1); }
+    &::-webkit-scrollbar-thumb {background-color: rgba($primary,0.25); border-radius: 20px; border: 0; }
+	@include media-max(sm){display: none;}
+}
